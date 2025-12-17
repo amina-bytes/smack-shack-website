@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smack Shack | Pure Vegetarian Café</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary:#7b6cff;
+      --secondary:#f5f3ff;
+      --dark:#222;
+      --muted:#666;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#fff;
+      color:var(--dark);
+    }
+
+    section{
+      padding:70px 8%;
+    }
+
+    h1,h2,h3,h4{
+      font-weight:600;
+    }
+
+    .center{
+      text-align:center;
+    }
+
+    /* ================= HERO (STARTS FROM PURE VEGETARIAN) ================= */
+    .hero{
+      display:grid;
+      grid-template-columns:1.1fr 0.9fr;
+      gap:40px;
+      align-items:center;
+      background:linear-gradient(135deg,var(--primary),#9f96ff);
+      color:#fff;
+      padding:80px 8%;
+    }
+
+    .hero span{
+      font-size:14px;
+      opacity:.9;
+    }
+
+    .hero h1{
+      font-size:42px;
+      line-height:1.2;
+      margin-top:10px;
+    }
+
+    .hero p{
+      margin:20px 0;
+      font-size:16px;
+    }
+
+    .btns a{
+      display:inline-block;
+      margin-right:12px;
+      padding:12px 22px;
+      border-radius:8px;
+      background:#fff;
+      color:var(--primary);
+      font-weight:600;
+      text-decoration:none;
+    }
+
+    .hero img{
+      width:100%;
+      border-radius:22px;
+      object-fit:cover;
+      height:360px;
+    }
+
+    /* ================= WHY SECTION ================= */
+    .features{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+      margin-top:40px;
+    }
+
+    .card{
+      background:var(--secondary);
+      padding:26px;
+      border-radius:18px;
+    }
+
+    .card p{
+      font-size:14px;
+      color:var(--muted);
+      margin-top:8px;
+    }
+
+    /* ================= POPULAR PICKS ================= */
+    .picks{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      margin-top:35px;
+    }
+
+    .pick{
+      background:#fff;
+      border-radius:14px;
+      padding:14px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    .pick img{
+      width:100%;
+      height:120px;
+      object-fit:contain;
+      background:#f6f6fb;
+      padding:8px;
+      border-radius:10px;
+    }
+
+    .pick h4{
+      margin-top:12px;
+      font-size:15px;
+    }
+
+    .pick p{
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    /* ================= EXPERIENCE ================= */
+    .experience{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:14px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:160px;
+      object-fit:cover;
+      border-radius:16px;
+    }
+
+    /* ================= CTA ================= */
+    .cta{
+      background:linear-gradient(135deg,var(--primary),#9f96ff);
+      color:#fff;
+      text-align:center;
+      border-radius:30px;
+      padding:60px;
+    }
+
+    .cta a{
+      background:#fff;
+      color:var(--primary);
+      padding:12px 24px;
+      border-radius:8px;
+      font-weight:600;
+      display:inline-block;
+      margin:10px;
+      text-decoration:none;
+    }
+
+    /* ================= FOOTER ================= */
+    footer{
+      background:#111;
+      color:#ccc;
+      padding:50px 8%;
+    }
+
+    footer h3{
+      color:#fff;
+      margin-bottom:10px;
+    }
+
+    footer .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:30px;
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media(max-width:900px){
+      .hero{
+        grid-template-columns:1fr;
+      }
+      .experience{
+        grid-template-columns:1fr;
+      }
+      .picks{
+        grid-template-columns:repeat(2,1fr);
+      }
+      .pick img{
+        height:100px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <span>🌿 Pure Vegetarian Café</span>
+    <h1>Your Everyday Veg Café in Davanagere</h1>
+    <p>Freshly prepared food, hygienic kitchen, calm ambience, and budget‑friendly prices loved by students and families.</p>
+    <div class="btns">
+      <a href="#picks">Popular Picks</a>
+      <a href="#visit">Visit Us</a>
+    </div>
+  </div>
+  <img src="images/cover.jpg" alt="Cafe Cover">
+</section>
+
+<!-- WHY -->
+<section>
+  <h2 class="center">Why Smack Shack?</h2>
+  <p class="center">More than just a café — it’s where the community comes together</p>
+
+  <div class="features">
+    <div class="card"><h4>🌿 Pure Vegetarian</h4><p>100% vegetarian menu with Jain options.</p></div>
+    <div class="card"><h4>✨ Hygienic Kitchen</h4><p>Fresh ingredients and strict hygiene standards.</p></div>
+    <div class="card"><h4>💸 Budget Friendly</h4><p>Meals between ₹200‑400.</p></div>
+    <div class="card"><h4>❤️ Loved by Locals</h4><p>Students and families keep coming back.</p></div>
+  </div>
+</section>
+
+<!-- POPULAR PICKS -->
+<section id="picks">
+  <h2 class="center">Popular Picks</h2>
+
+  <div class="picks">
+    <div class="pick"><img src="images/dessert1.jpg"><h4>Waffles & Desserts</h4><p>Starting ₹120</p></div>
+    <div class="pick"><img src="images/coffee1.jpg"><h4>Coffee & Coolers</h4><p>Starting ₹80</p></div>
+    <div class="pick"><img src="images/snack2.jpg"><h4>Snacks & Quick Bites</h4><p>Starting ₹150</p></div>
+    <div class="pick"><img src="images/pizza1.jpg"><h4>Pizzas</h4><p>Starting ₹199</p></div>
+    <div class="pick"><img src="images/snack1.jpg"><h4>Sandwiches</h4><p>Starting ₹120</p></div>
+    <div class="pick"><img src="images/mocktail1.jpg"><h4>Mocktails</h4><p>Starting ₹99</p></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+  <h2 class="center">✨ The Experience</h2>
+
+  <div class="experience">
+    <div class="gallery">
+      <img src="images/ambience1.jpg">
+      <img src="images/ambience2.jpg">
+      <img src="images/ambience3.jpg">
+      <img src="images/ambience4.jpg">
+      <img src="images/ambience5.jpg">
+      <img src="images/cover.jpg">
+    </div>
+    <div>
+      <p>A calm, modern café designed for comfort, conversations, and coffee.</p>
+      <ul>
+        <li>✔ Comfortable seating</li>
+        <li>✔ Student‑friendly space</li>
+        <li>✔ Warm lighting & relaxed vibe</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="visit">
+  <h2>Ready to Experience Smack Shack?</h2>
+  <p>Visit us today for great food and great vibes.</p>
+  <a href="#">Get Directions</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="grid">
+    <div>
+      <h3>Smack Shack</h3>
+      <p>Your everyday pure vegetarian café in Davanagere.</p>
+    </div>
+    <div>
+      <h3>Visit Us</h3>
+      <p>Davanagere, Karnataka<br>Daily: 10 AM – 10 PM</p>
+    </div>
+    <div>
+      <h3>Connect</h3>
+      <p>⭐ 4.0+ Rating on Google</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
